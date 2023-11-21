@@ -2,7 +2,10 @@
 
 # Path Management
 export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=YES
+export D=$HOME/Nerd
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
+alias vim=nvim
 alias gdh="git diff HEAD"
 function gdm() {
  git diff $1 $(git merge-base main HEAD) HEAD

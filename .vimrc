@@ -52,13 +52,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'lervag/vimtex'
 Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-fugitive'     " Git integration
 Plugin 'tpope/vim-surround'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'godlygeek/tabular'
 Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'ronakg/quickr-cscope.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
