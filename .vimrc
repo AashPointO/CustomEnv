@@ -1,5 +1,5 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible " be iMproved, required
+filetype off     " required
 
 set number
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
