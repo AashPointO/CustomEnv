@@ -8,7 +8,6 @@ syntax on
 hi Search ctermbg=Yellow
 hi Search ctermfg=Black
 
-:command PDF w|!(pdflatex %)
 noremap! <C-?> <C-h>
 
 imap jj <Esc>
@@ -67,3 +66,17 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+
+" VimTeX -- START
+syntax enable
+"let g:vimtex_view_method = 'zathura'
+" Or with a generic interface:
+let g:tex_flavor='latex' " Default tex file format
+let g:vimtex_view_method = 'skim' " Choose which program to use to view PDF file
+let g:vimtex_view_skim_sync = 1 " Value 1 allows forward search after every successful compilation
+let g:vimtex_view_skim_activate = 1 " Value 1 allows change focus to skim after command `:VimtexView` is given
+" let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
+" let g:vimtex_compiler_method = 'latexmk'
+" let maplocalleader = ","
+"  VimTeX -- END
